@@ -1,0 +1,241 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.sidebar a {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 15px 0;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #34495e;
+}
+
+/* Content */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+h3 {
+    margin-top: 10px;
+}
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #34495e;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background-color: #ecf0f1;
+    color: #34495e;
+}
+
+td {
+    background-color: #fff;
+}
+
+.status-cell {
+    font-weight: bold;
+}
+
+.status-logged {
+    color: green;
+}
+
+.status-pending {
+    color: red;
+}
+
+.log-type-display {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.log-type-display span {
+    font-weight: bold;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 300px;
+    max-width: 90%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 9999;
+    opacity: 1;
+    transform: translateY(-10px);
+    transition: all 0.5s ease-in-out;
+}
+
+.alert-success {
+    background-color: #bce6c6;
+    color: white;
+}
+
+.alert-danger {
+    background-color: #a77673;
+    color: white;
+}
+
+.alert.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.table-container {
+    margin-bottom: 40px;
+}
+
+.btn-pdf {
+    background-color: #df3535;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pdf:hover {
+    background-color: #5a6268;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+
+    input[type="date"],
+    input[type="time"],
+    select,
+    textarea {
+        width: 100%;
+    }
+}
